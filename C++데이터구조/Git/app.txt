@@ -1,0 +1,63 @@
+aaaaaaaaaaaaa
+bbbbbbbbbbbbb
+ccccccccccccc
+
+vsc 왼쪽 3번째 눌러봐,,, git 연동된다... 짱이다
+
+git init 
+git이 파일 감시를 시작함
+
+git add 파일 이름
+git에 저장할 파일을 고름, .만 찍으면 전체 파일
+
+git commit -m '코멘트'  --->commit:하나의 버전
+git에 저장
+
+작업 폴더 -add(스테이징한다)-> staging area -commit-> repository(저장소)
+
+git status 
+이때까지 스테이징한 파일 보여줌, 현재 어디에 있는지 알려줌
+
+git log
+커밋한 내역을 볼 수 있음
+--online --all 추가 가능
+
+git diif
+최근 커밋한거랑 현재파일 비교해줌(차이점 보기 불편)
+
+git difftool
+시각적 비교 가능 훨씬 편안함
+종료는 :q
+뒤에 커밋 아이디(git log) 붙이면 특정 커밋과 비교
+
+그냥 vsc 확장자 설치하는게 제일 편할지도? git graph, history 추천
+둘 중 하나 나중에 설치해봐
+
+git branch 작명
+작명이 이름인 브랜치 생성(최근 커밋 프로젝트 사본)
+
+git switch 작명
+사본 파일로 이동
+
+git switch main
+main/master 원본으로 돌아옴
+
+git merge 브랜치작명 
+메인 위치에서 합쳐야 됨, 같은 곳 수정할 시 충돌 조심(원하는 코드만 남기고 지우면 충돌 없어짐)
+
+만일 git hub에서 파일을 들고왔다면 git push로 바로 저장 가능(원격 저장소로 저장)
+1. 컴퓨터에 폴더 생성, git hub에서 repository 만듦
+2. Git bash 켜고 cd "폴더 주소"
+3. git hub의 repository에 들어가서 Clone or download 버튼을 클릭
+4. repo 주소가 복사됨
+5. $ git clone 주소
+6. git init하면 시작 , add, commit 하면서 코드 짜기
+7. $ git remote -v로 원격 저장소 주소가 연결된지 확인
+8. 없다면 git remote add origin 깃허브repo주소 ---->orgin: remote repository의 URL short name
+9. git push -u origin 파일이름(브랜치이름) 하면 업로드 됨
+https://opentutorials.org/module/3963/24442
+
++git pull 은 새로 올라온 commit들 다운로드 하는 코드
+
+git: 버전 관리 프로그램
+git hub: 버전 관리, 소스 코드 공유, 분산 버전 제어 등등 가능한 원격 저장소
